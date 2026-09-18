@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cyveura — Application Protection &amp; Security Operations</title>
-  <meta name="description" content="Cyveura builds cybersecurity platforms: Coconut Shield protects Android and iOS apps, and Hunter SIEM helps security teams detect, investigate and respond to threats with on-premises AI.">
-  <meta property="og:title" content="Cyveura — Security for what you build. Intelligence for what you defend.">
-  <meta property="og:description" content="Coconut Shield Runtime Application Self-Protection (RASP) and Hunter SIEM with on-premises AI.">
+  <title>Cyveura — Runtime Application Self-Protection</title>
+  <meta name="description" content="Cyveura builds cybersecurity products. Coconut Shield adds Runtime Application Self-Protection (RASP) to finished Android and iOS apps, with no source code or SDK required.">
+  <meta property="og:title" content="Cyveura — Security for what you build.">
+  <meta property="og:description" content="Coconut Shield: Runtime Application Self-Protection (RASP) for Android and iOS apps.">
   <meta property="og:image" content="https://cyveura.com/assets/img/logo-256.png">
   <meta property="og:url" content="https://cyveura.com/">
   <meta name="theme-color" content="#06101d">
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Bodoni+Moda:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
 
@@ -24,7 +24,6 @@
   <defs>
     <symbol id="i-check" viewBox="0 0 20 20"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-chev" viewBox="0 0 20 20"><path d="m6 8 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
 
@@ -36,21 +35,8 @@
       <span>CYVEURA</span>
     </a>
     <nav class="nav__links" id="navLinks" aria-label="Main">
-      <div class="dd">
-        <button class="dd__btn" aria-haspopup="true" aria-expanded="false">Products <svg><use href="#i-chev"/></svg></button>
-        <div class="dd__menu">
-          <a class="dd__item" href="https://coconut.cyveura.com">
-            <img width="38" height="38" class="lg lg--dd" src="assets/img/coconut-logo-bright.png" alt="">
-            <span><b>Coconut Shield</b><small>Runtime Application Self-Protection</small></span>
-          </a>
-          <a class="dd__item" href="https://hunter.cyveura.com">
-            <span class="chip chip--dd"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span>
-            <span><b>Hunter SIEM</b><small>Detection, investigation &amp; response</small></span>
-          </a>
-        </div>
-      </div>
-      <a href="#platform">Platform</a>
-      <a href="#why">Why Cyveura</a>
+      <a href="#coconut">Coconut Shield</a>
+      <a href="#why">Why it matters</a>
       <a href="#industries">Industries</a>
       <a href="#vision">Vision</a>
       <a class="nav__cta-mobile btn btn--outline" href="#contact">Request a demo</a>
@@ -66,43 +52,28 @@
   <div class="hero__grid-bg" aria-hidden="true"></div>
   <div class="wrap hero__inner">
     <div class="hero__copy">
-      <p class="eyebrow eyebrow--light">Cybersecurity &nbsp;|&nbsp; Applications + Operations</p>
-      <h1>Security for what you build.<br><span class="grad">Intelligence for what you defend.</span></h1>
-      <p class="lead">Cyveura makes two security products. Coconut Shield protects your mobile apps from reverse engineering, tampering and runtime attacks. Hunter SIEM gives your security team the visibility to detect, investigate and respond, with an AI assistant that runs on your own hardware.</p>
+      <p class="eyebrow eyebrow--light">Cybersecurity &nbsp;|&nbsp; Application protection</p>
+      <h1>Security for what you build.<br><span class="grad">Protection that ships with your app.</span></h1>
+      <p class="lead">Cyveura builds security products. Our first, Coconut Shield, adds Runtime Application Self-Protection to your finished Android and iOS apps. Your app can then detect rooted devices, hooking tools, debuggers and tampering, and respond on its own.</p>
       <div class="hero__ctas">
         <a class="btn btn--green" href="https://coconut.cyveura.com"><span class="chip"><img width="24" height="24" src="assets/img/coconut-logo.png" alt=""></span>Explore Coconut Shield<svg class="ic-s"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--blue" href="https://hunter.cyveura.com"><span class="chip"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span>Explore Hunter SIEM<svg class="ic-s"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--outline" href="#contact">Request a POC</a>
       </div>
     </div>
 
     <div class="hero__visual" aria-hidden="true">
-      <!-- SIEM dashboard mock -->
-      <div class="dash">
-        <div class="dash__bar"><span class="chip chip--xs"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span><b>HUNTER SIEM</b><i></i><i></i><i></i></div>
-        <div class="dash__body">
-          <div class="dash__side"><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="dash__main">
-            <div class="dash__stats">
-              <div><small>Total alerts</small><b>237</b></div>
-              <div class="crit"><small>Critical</small><b>12</b></div>
-              <div class="high"><small>High</small><b>48</b></div>
-              <div class="med"><small>Medium</small><b>137</b></div>
-            </div>
-            <div class="dash__row">
-              <div class="dash__chart">
-                <small>Events / hour</small>
-                <div class="bars"><i style="--h:30%"></i><i style="--h:45%"></i><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:50%"></i><i style="--h:72%"></i><i style="--h:44%"></i><i style="--h:85%"></i><i style="--h:58%"></i><i style="--h:66%"></i><i style="--h:40%"></i><i style="--h:92%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:78%"></i><i style="--h:48%"></i></div>
-              </div>
-              <div class="dash__alerts">
-                <small>Recent alerts</small>
-                <p><i class="c"></i>Brute-force login attempt<em>2m</em></p>
-                <p><i class="h"></i>Privilege escalation<em>9m</em></p>
-                <p><i class="h"></i>Malware detected<em>21m</em></p>
-                <p><i class="m"></i>Anomalous traffic<em>1h</em></p>
-                <p><i class="m"></i>New admin account<em>3h</em></p>
-              </div>
-            </div>
-          </div>
+      <!-- Runtime checks mock -->
+      <div class="dash dash--green">
+        <div class="dash__bar"><img width="18" height="18" class="dash__logo" src="assets/img/coconut-logo-bright.png" alt=""><b>COCONUT SHIELD · RUNTIME CHECKS</b><i></i><i></i><i></i></div>
+        <div class="rc">
+          <p><span>Root / jailbreak</span><em class="ok">Clear</em></p>
+          <p><span>Frida / hooking</span><em class="bad">Detected · app closed</em></p>
+          <p><span>Debugger attached</span><em class="ok">Clear</em></p>
+          <p><span>Emulator</span><em class="ok">Clear</em></p>
+          <p><span>VPN / proxy</span><em class="warn">Warned user</em></p>
+          <p><span>Signature integrity</span><em class="ok">Verified</em></p>
+          <p><span>String encryption</span><em class="on">On</em></p>
+          <p><span>DEX packing</span><em class="on">On</em></p>
         </div>
       </div>
       <!-- Phone mock -->
@@ -123,18 +94,18 @@
     </div>
   </div>
   <div class="wrap">
-    <p class="tagline"><span>Protect applications.</span> <span>Detect threats.</span> <span>Respond with intelligence.</span></p>
+    <p class="tagline"><span>Protect applications.</span> <span>Detect attacks.</span> <span>Respond at runtime.</span></p>
   </div>
 </section>
 
-<!-- ================= TWO PRODUCTS ================= -->
+<!-- ================= PRODUCT ================= -->
 <section class="section section--light" id="products">
   <div class="wrap">
-    <p class="eyebrow center">Two products · One vision</p>
-    <h2 class="center">Two security problems, one company solving both.</h2>
-    <p class="sub center">Attackers go after the app in your customer's hand and the infrastructure behind it. Cyveura covers both.</p>
+    <p class="eyebrow center">Our product</p>
+    <h2 class="center">Your app runs on devices you don't control.</h2>
+    <p class="sub center">Once it's published, anyone can download it, decompile it and run it on a device they fully control. Coconut Shield makes the app defend itself.</p>
 
-    <div class="prod-grid">
+    <div class="prod-grid prod-grid--solo">
       <article class="prod prod--green">
         <header>
           <img width="64" height="64" class="prod__icon" src="assets/img/coconut-logo.png" alt="Coconut Shield logo">
@@ -151,65 +122,18 @@
         <a class="btn btn--green" href="https://coconut.cyveura.com">Explore Coconut Shield<svg class="ic-s"><use href="#i-arrow"/></svg></a>
       </article>
 
-      <article class="prod prod--blue">
-        <header>
-          <img width="64" height="64" class="prod__icon" src="assets/img/hunter-logo.png" alt="Hunter SIEM logo">
-          <div><h3>Hunter SIEM</h3><p class="prod__kicker">Security information &amp; event management</p></div>
-        </header>
-        <p>Turn raw security telemetry into decisions. Hunter collects logs from endpoints, servers and network devices, correlates them into alerts, and helps your analysts investigate with an AI assistant that runs on premises.</p>
-        <ul class="checks cols-2">
-          <li>Log collection &amp; normalization</li><li>Real-time monitoring</li>
-          <li>Correlation &amp; detection rules</li><li>Threat intelligence feeds</li>
-          <li>Behavioural &amp; risk analysis</li><li>AI security assistant</li>
-          <li>Natural-language search</li><li>AI-drafted rules &amp; decoders</li>
-          <li>Tickets &amp; incident workflow</li><li>Compliance &amp; reports</li>
-        </ul>
-        <a class="btn btn--blue" href="https://hunter.cyveura.com">Explore Hunter SIEM<svg class="ic-s"><use href="#i-arrow"/></svg></a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FLOW ================= -->
-<section class="section section--dark" id="platform">
-  <div class="wrap flow">
-    <div class="lanes">
-      <div class="lane lane--green">
-        <p class="lane__label">Inside your mobile app</p>
-        <div class="lane__row" role="list" aria-label="Coconut Shield">
-          <div class="flow__node" role="listitem"><span class="flow__ic">📱</span><b>Your app</b><small>APK / IPA</small></div>
-          <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-          <div class="flow__node flow__node--green" role="listitem"><img width="54" height="54" class="flow__svg" src="assets/img/coconut-logo-bright.png" alt=""><b>Coconut Shield</b><small>Built into the app</small></div>
-          <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-          <div class="flow__node" role="listitem"><span class="flow__ic">🛡️</span><b>On the device</b><small>Detects &amp; blocks attacks</small></div>
-        </div>
-        <p class="lane__note">Runs entirely inside the app. No logs or data are sent to Cyveura or to Hunter.</p>
-      </div>
-
-      <div class="lanes__sep"><span>Independent · use one or both</span></div>
-
-      <div class="lane lane--blue">
-        <p class="lane__label">Across your infrastructure</p>
-        <div class="lane__row" role="list" aria-label="Hunter SIEM">
-          <div class="flow__node" role="listitem"><span class="flow__ic">🖥️</span><b>Your systems</b><small>Servers, endpoints, network</small></div>
-          <svg class="flow__arrow flow__arrow--blue" aria-hidden="true"><use href="#i-arrow"/></svg>
-          <div class="flow__node flow__node--blue" role="listitem"><span class="chip chip--flow"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span><b>Hunter SIEM</b><small>Detects &amp; investigates</small></div>
-          <svg class="flow__arrow flow__arrow--blue" aria-hidden="true"><use href="#i-arrow"/></svg>
-          <div class="flow__node" role="listitem"><span class="flow__ic">👥</span><b>Security team</b><small>Responds</small></div>
-        </div>
-        <p class="lane__note">Collects logs from your own systems and keeps them on your infrastructure.</p>
-      </div>
-    </div>
-    <div class="flow__copy">
-      <h2>Two layers of defense.<br>Two separate products.</h2>
-      <p><b class="t-green">Coconut Shield</b> protects the apps you ship, on your users&rsquo; devices.<br><b class="t-blue">Hunter SIEM</b> watches the systems you run.</p>
-      <p>Each works on its own and needs nothing from the other. Use whichever covers your risk, or both.</p>
+      <aside class="prod prod--soon">
+        <p class="eyebrow">More on the way</p>
+        <h3>We're building more of the security stack.</h3>
+        <p>Coconut Shield is our first product. More are in development. If there's a security problem you'd like solved, tell us about it.</p>
+        <a class="btn btn--outline btn--dark" href="mailto:contact@cyveura.com?subject=Talk%20to%20Cyveura">Talk to us<svg class="ic-s"><use href="#i-arrow"/></svg></a>
+      </aside>
     </div>
   </div>
 </section>
 
 <!-- ================= COCONUT DEEP DIVE ================= -->
-<section class="section section--light" id="coconut">
+<section class="section section--tint" id="coconut">
   <div class="wrap split">
     <div class="split__visual">
       <div class="orbit" aria-hidden="true">
@@ -234,7 +158,7 @@
     <div class="split__copy">
       <p class="eyebrow t-green"><img width="22" height="22" class="ic-inline" src="assets/img/coconut-logo.png" alt=""> Coconut Shield</p>
       <h2>Protect your mobile app after it leaves your hands.</h2>
-      <p class="sub">Once an app is published, anyone can download it, decompile it and run it on a device they fully control. Coconut Shield adds protection to your finished Android and iOS builds so the app can detect a hostile environment and respond while it runs.</p>
+      <p class="sub">Coconut Shield adds protection to your finished Android and iOS builds. The app checks its environment while it runs and responds the way you choose. All of it runs inside the app: nothing is sent back to us.</p>
 
       <div class="cards-2">
         <div class="mini">
@@ -260,77 +184,7 @@
         <li><b>Choose</b><span>shields &amp; responses</span></li>
         <li><b>Download</b><span>a signed, protected build</span></li>
       </ol>
-      <a class="btn btn--green" href="https://coconut.cyveura.com">Start with Coconut Shield<svg class="ic-s"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= HUNTER DEEP DIVE ================= -->
-<section class="section section--tint" id="hunter">
-  <div class="wrap split split--rev">
-    <div class="split__copy">
-      <p class="eyebrow t-blue"><img width="22" height="22" class="ic-inline" src="assets/img/hunter-logo.png" alt=""> Hunter SIEM</p>
-      <h2>Turn security data into security decisions.</h2>
-      <p class="sub">Most teams already have more logs than they can read. Hunter brings them into one place, normalizes them, applies detection rules and threat intelligence, and presents what needs attention. Your analysts can then ask questions in plain language.</p>
-
-      <div class="pipeline">
-        <div><span>1</span><b>Collect</b><small>Agents, syslog &amp; network devices</small></div>
-        <div><span>2</span><b>Detect</b><small>Correlation rules &amp; threat feeds</small></div>
-        <div><span>3</span><b>Investigate</b><small>AI-assisted triage &amp; search</small></div>
-        <div><span>4</span><b>Respond</b><small>Tickets, notifications &amp; reports</small></div>
-      </div>
-
-      <h3 class="h-sm">An AI assistant that doesn't send your data out</h3>
-      <div class="ai-grid">
-        <div class="ai">
-          <b>Ask your security data</b>
-          <q>Show me every failed login from this IP in the last 15 minutes.</q>
-        </div>
-        <div class="ai">
-          <b>Generate detection logic</b>
-          <q>Create a rule for repeated failed Windows logins.</q>
-        </div>
-        <div class="ai">
-          <b>Triage automatically</b>
-          <q>High-severity alerts come with an AI summary and suggested next steps.</q>
-        </div>
-      </div>
-      <p class="note"><svg class="ic-s"><use href="#i-check"/></svg> The AI proposes and an analyst approves before anything is deployed. The model runs on your own hardware, so no telemetry goes to a third-party AI service.</p>
-      <a class="btn btn--blue" href="https://hunter.cyveura.com">Explore Hunter SIEM<svg class="ic-s"><use href="#i-arrow"/></svg></a>
-    </div>
-
-    <div class="split__visual">
-      <div class="dash dash--lg" aria-hidden="true">
-        <div class="dash__bar"><span class="chip chip--xs"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span><b>HUNTER SIEM</b><i></i><i></i><i></i></div>
-        <div class="dash__body">
-          <div class="dash__side"><span></span><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="dash__main">
-            <div class="chat">
-              <p class="chat__q">Which hosts had failed SSH logins followed by a success today?</p>
-              <div class="chat__a">
-                <b>Assistant</b>
-                <p>2 hosts match: <code>web-02</code> (41 failures → success at 09:14) and <code>db-01</code> (7 failures → success at 11:52). <code>web-02</code> matches a brute-force pattern from one source IP.</p>
-                <div class="chat__acts"><span>Open alerts</span><span>Create ticket</span><span>Draft rule</span></div>
-              </div>
-            </div>
-            <div class="dash__row">
-              <div class="dash__chart"><small>Alerts by severity</small>
-                <div class="bars bars--sev"><i style="--h:35%"></i><i style="--h:55%"></i><i style="--h:42%"></i><i style="--h:70%"></i><i style="--h:60%"></i><i style="--h:88%"></i><i style="--h:50%"></i><i style="--h:64%"></i><i style="--h:46%"></i><i style="--h:75%"></i></div>
-              </div>
-              <div class="dash__alerts"><small>Open tickets</small>
-                <p><i class="c"></i>INC-204 Brute force<em>new</em></p>
-                <p><i class="h"></i>INC-203 Malware<em>wip</em></p>
-                <p><i class="m"></i>INC-201 Policy<em>wip</em></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ul class="checks cols-2 sources">
-        <li>Windows, Linux &amp; macOS endpoints</li><li>Firewalls &amp; network devices</li>
-        <li>WAF &amp; web servers</li><li>Applications via syslog</li>
-        <li>Compliance dashboards</li><li>Full audit log</li>
-      </ul>
+      <a class="btn btn--green" href="https://coconut.cyveura.com">Start a free trial<svg class="ic-s"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </section>
@@ -339,38 +193,38 @@
 <section class="section section--light" id="why">
   <div class="wrap">
     <p class="eyebrow center">Why it matters</p>
-    <h2 class="center">The threats have moved. Security has to move with them.</h2>
+    <h2 class="center">Store review and HTTPS don't protect the app itself.</h2>
     <div class="why-grid">
       <div class="why">
-        <h4>Apps run on devices you don't control</h4>
-        <p>A published app can be decompiled, patched, re-signed and redistributed. Attackers hook it at runtime to bypass checks, extract keys or automate fraud. Store review and HTTPS don't prevent any of this.</p>
+        <h4>Apps can be repackaged</h4>
+        <p>A published app can be decompiled, patched, re-signed and redistributed with your name on it. Coconut Shield's signature check makes a modified copy refuse to run.</p>
       </div>
       <div class="why">
-        <h4>Security teams have too many alerts</h4>
-        <p>Logs arrive from every server, endpoint and firewall, and real attacks look like noise until someone connects them. Analysts need correlation and context, not another raw log feed.</p>
+        <h4>Attackers hook apps at runtime</h4>
+        <p>Tools like Frida let an attacker change what your code does while it runs: skip a login check, pull out keys, automate fraud. The app needs to notice when that happens.</p>
       </div>
       <div class="why">
-        <h4>Sensitive data needs to stay put</h4>
-        <p>Banks, government and regulated industries often can't send security telemetry to a public cloud or an outside AI service. Their tools have to run where the data already is.</p>
+        <h4>Compromised devices change the rules</h4>
+        <p>On a rooted or jailbroken phone, an emulator or behind an intercepting proxy, the usual assumptions fail. Banking and payment apps are often expected to detect this.</p>
       </div>
       <div class="why">
-        <h4>Security is expensive to operate</h4>
-        <p>Enterprise suites are priced and staffed for the largest companies. Cyveura's products are built so a small team can run them and see results quickly.</p>
+        <h4>Protection shouldn't cost a rebuild</h4>
+        <p>Adding an SDK means code changes, new releases and more testing. Coconut Shield works on the finished build, so security doesn't slow your release schedule.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= DEPLOY / WHY CYVEURA / INDUSTRIES ================= -->
+<!-- ================= DELIVERY / WHY CYVEURA / INDUSTRIES ================= -->
 <section class="section section--tint">
   <div class="wrap trio">
     <div class="panel">
-      <h3>Your environment. Your data. Your AI.</h3>
-      <p>Hunter can be deployed entirely on premises, so security telemetry and AI analysis stay on your infrastructure.</p>
+      <h3>Delivered the way you need</h3>
+      <p>Protect apps from the web portal, or run the whole portal inside your own environment.</p>
       <div class="deploy">
-        <div><b>Cloud (SaaS)</b><small>Get started quickly with no hardware</small></div>
+        <div><b>Cloud portal</b><small>Upload, protect and download from coconut.cyveura.com</small></div>
         <div><b>On-premises</b><small>Your servers, your network, including air-gapped</small></div>
-        <div><b>Hybrid</b><small>A mix of both, depending on the workload</small></div>
+        <div><b>Free trial</b><small>Every shield unlocked for 15 days</small></div>
       </div>
     </div>
 
@@ -378,21 +232,21 @@
       <h3>Why Cyveura?</h3>
       <div class="feat-list">
         <div><b>Security-first</b><small>We build security products and nothing else.</small></div>
-        <div><b>Deploy where you need it</b><small>Cloud, on-premises or hybrid.</small></div>
-        <div><b>AI under human control</b><small>The AI assists your analysts. It doesn't replace them.</small></div>
-        <div><b>Built for real operations</b><small>Tested against real attack tooling on real devices.</small></div>
-        <div><b>No source code required</b><small>Coconut Shield protects the finished build.</small></div>
+        <div><b>No source code required</b><small>We protect the finished APK or IPA.</small></div>
+        <div><b>Nothing phones home</b><small>The protection runs inside your app, on the device.</small></div>
+        <div><b>You stay in control</b><small>Choose warn, block or exit for every shield.</small></div>
+        <div><b>Tested against real tools</b><small>Checked on real devices against real attack tooling.</small></div>
       </div>
     </div>
 
     <div class="panel" id="industries">
       <h3>Industries</h3>
       <div class="feat-list">
-        <div><b>Banking &amp; financial services</b><small>Mobile banking apps and SOC operations</small></div>
-        <div><b>Fintech &amp; digital payments</b><small>Wallets, payment apps and fraud prevention</small></div>
-        <div><b>Telecom</b><small>Subscriber apps and network monitoring</small></div>
-        <div><b>Enterprise</b><small>Visibility plus application protection</small></div>
-        <div><b>Government &amp; regulated</b><small>On-premises deployments where data stays in the country</small></div>
+        <div><b>Banking &amp; financial services</b><small>Mobile banking and wallet apps</small></div>
+        <div><b>Fintech &amp; digital payments</b><small>Payment apps and fraud prevention</small></div>
+        <div><b>Telecom</b><small>Subscriber and self-care apps</small></div>
+        <div><b>Enterprise</b><small>Internal and customer-facing apps</small></div>
+        <div><b>Government &amp; regulated</b><small>Citizen apps, with on-premises delivery</small></div>
       </div>
     </div>
   </div>
@@ -404,12 +258,12 @@
     <img src="assets/img/logo-256.png" alt="Cyveura logo" width="160" height="166" loading="lazy">
     <div>
       <p class="eyebrow eyebrow--light">Our vision</p>
-      <h2>Security that goes from the code you ship to the SOC that defends it.</h2>
-      <p>Attackers go after both the app in your customer&rsquo;s hand and the infrastructure behind it. We build a focused product for each: one that defends the app on the device, and one that gives your security team visibility across the systems you run. Each product stands on its own. Together they cover both sides.</p>
+      <h2>Security that travels with the software you ship.</h2>
+      <p>Most security stops at the network edge, but your app lives on millions of devices you'll never see. We think the software itself should carry its defenses. Coconut Shield is where we start, and we're building more.</p>
       <div class="vision__pillars">
         <div><b>Protect</b><small>every app you release</small></div>
-        <div><b>Detect</b><small>every threat that matters</small></div>
-        <div><b>Respond</b><small>with intelligence you control</small></div>
+        <div><b>Detect</b><small>every attack at runtime</small></div>
+        <div><b>Respond</b><small>on the device, instantly</small></div>
       </div>
     </div>
   </div>
@@ -418,11 +272,11 @@
 <!-- ================= CTA ================= -->
 <section class="cta" id="contact">
   <div class="wrap center">
-    <h2>See the technology in action</h2>
-    <p>Request a Coconut Shield proof of concept on your own app, or a guided Hunter SIEM demo.</p>
+    <h2>See Coconut Shield on your own app</h2>
+    <p>Request a proof of concept, or ask us about pricing for your apps and build volume.</p>
     <div class="hero__ctas center-row">
-      <a class="btn btn--green" href="mailto:contact@cyveura.com?subject=Coconut%20Shield%20POC%20request">Request a Coconut Shield POC<svg class="ic-s"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn--blue" href="mailto:contact@cyveura.com?subject=Hunter%20SIEM%20demo%20request">Request a Hunter SIEM demo<svg class="ic-s"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--green" href="mailto:contact@cyveura.com?subject=Coconut%20Shield%20POC%20request">Request a POC<svg class="ic-s"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--outline" href="mailto:contact@cyveura.com?subject=Coconut%20Shield%20pricing">Contact us for pricing</a>
     </div>
     <p class="cta__mail">Or write to <a href="mailto:contact@cyveura.com">contact@cyveura.com</a></p>
   </div>
@@ -437,7 +291,7 @@
       <p>Smarter security. Stronger tomorrow.</p>
     </div>
     <div class="footer__cols">
-      <div><h5>Products</h5><a href="https://coconut.cyveura.com">Coconut Shield</a><a href="https://hunter.cyveura.com">Hunter SIEM</a></div>
+      <div><h5>Product</h5><a href="https://coconut.cyveura.com">Coconut Shield</a><a href="https://coconut.cyveura.com/plans">Plans</a></div>
       <div><h5>Company</h5><a href="#vision">Vision</a><a href="#why-cyveura">Why Cyveura</a><a href="#industries">Industries</a></div>
       <div><h5>Contact</h5><a href="mailto:contact@cyveura.com">contact@cyveura.com</a><a href="#contact">Request a demo</a></div>
     </div>
@@ -448,6 +302,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=6"></script>
+<script src="assets/js/main.js?v=8"></script>
 </body>
 </html>

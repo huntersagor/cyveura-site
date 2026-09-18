@@ -17,18 +17,22 @@
 
   // Products dropdown: click/keyboard support in addition to hover.
   var dd = document.querySelector('.dd');
-  var ddBtn = dd.querySelector('.dd__btn');
-  ddBtn.addEventListener('click', function (e) {
-    e.stopPropagation();
-    var open = dd.classList.toggle('open');
-    ddBtn.setAttribute('aria-expanded', String(open));
-  });
-  document.addEventListener('click', function () {
-    dd.classList.remove('open');
-    ddBtn.setAttribute('aria-expanded', 'false');
-  });
+  if (dd) {
+    var ddBtn = dd.querySelector('.dd__btn');
+    ddBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle('open');
+      ddBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function () {
+      dd.classList.remove('open');
+      ddBtn.setAttribute('aria-expanded', 'false');
+    });
+  }
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { dd.classList.remove('open'); closeMenu(); }
+    if (e.key !== 'Escape') return;
+    if (dd) dd.classList.remove('open');
+    closeMenu();
   });
 
   // Fade sections in as they scroll into view.
