@@ -492,5 +492,23 @@ img.ic-inline { display: inline-block; object-fit: contain; }
 .vision__inner { grid-template-columns: 200px 1fr; }
 .vision__inner img { width: 170px; height: auto; aspect-ratio: 783 / 812; object-fit: contain; justify-self: center; align-self: center; }
 @media (max-width: 920px) {
-  .vision__inner img { width: 120px; justify-self: start; }
+  .vision__inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .vision__inner img { width: 110px; justify-self: start; }
+}
+
+/* Phones: the hero phone mock would cover the runtime-checks labels, so show the panel alone. */
+@media (max-width: 640px) {
+  .hero__visual { min-height: 0; }
+  .hero__visual .phone { display: none; }
+  .hero__visual .dash--green { position: static; width: 100%; }
+  .hero__visual .rc { padding-left: .8rem; }
+  .hero__visual .rc p:nth-child(n+6) { display: flex; }
+  .dash--green .dash__bar b { font-size: 10px; letter-spacing: .08em; }
+}
+
+/* Tablet/desktop: drop the phone below the panel's title bar so it never covers the title. */
+@media (min-width: 641px) {
+  .hero__visual { min-height: 460px; }
+  .hero__visual .dash--green { top: 0; }
+  .hero__visual .phone { top: 64px; bottom: auto; }
 }
