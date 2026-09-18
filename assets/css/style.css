@@ -391,3 +391,17 @@ p { margin: 0 0 1em; }
   .footer__cols { gap: 2rem; }
   .cta .btn { width: 100%; justify-content: center; white-space: normal; }
 }
+
+/* ---------- product logos ---------- */
+/* Hunter's logo is black, so on dark or coloured backgrounds it sits on a white chip. */
+.chip { display: inline-grid; place-items: center; flex: none; width: 30px; height: 30px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px rgba(255,255,255,.25); overflow: hidden; }
+.chip img { width: 84%; height: 84%; object-fit: contain; }
+.chip--xs { width: 22px; height: 22px; }
+.chip--dd { width: 38px; height: 38px; }
+.chip--flow { width: 58px; height: 58px; box-shadow: 0 0 18px -2px rgba(56,182,255,.55); }
+.lg--dd { width: 38px; height: 38px; object-fit: contain; flex: none; }
+img.phone__logo, img.flow__svg { object-fit: contain; }
+img.flow__svg { filter: drop-shadow(0 0 10px rgba(61,220,107,.45)); }
+img.phone__logo { filter: drop-shadow(0 0 12px rgba(61,220,107,.5)); }
+img.prod__icon { width: 64px; height: 64px; object-fit: contain; }
+img.ic-inline { display: inline-block; object-fit: contain; }
