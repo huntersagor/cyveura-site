@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Bodoni+Moda:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=5">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
 </head>
 <body>
 
@@ -173,20 +173,37 @@
 <!-- ================= FLOW ================= -->
 <section class="section section--dark" id="platform">
   <div class="wrap flow">
-    <div class="flow__chain" role="list" aria-label="How the products fit together">
-      <div class="flow__node" role="listitem"><span class="flow__ic">📱</span><b>Your application</b></div>
-      <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      <div class="flow__node flow__node--green" role="listitem"><img width="54" height="54" class="flow__svg" src="assets/img/coconut-logo-bright.png" alt=""><b>Coconut Shield</b><small>Protects the app</small></div>
-      <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      <div class="flow__node" role="listitem"><span class="flow__ic">🖥️</span><b>Your infrastructure</b></div>
-      <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      <div class="flow__node flow__node--blue" role="listitem"><span class="chip chip--flow"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span><b>Hunter SIEM</b><small>Detects &amp; investigates</small></div>
-      <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      <div class="flow__node" role="listitem"><span class="flow__ic">👥</span><b>Security team</b></div>
+    <div class="lanes">
+      <div class="lane lane--green">
+        <p class="lane__label">Inside your mobile app</p>
+        <div class="lane__row" role="list" aria-label="Coconut Shield">
+          <div class="flow__node" role="listitem"><span class="flow__ic">📱</span><b>Your app</b><small>APK / IPA</small></div>
+          <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <div class="flow__node flow__node--green" role="listitem"><img width="54" height="54" class="flow__svg" src="assets/img/coconut-logo-bright.png" alt=""><b>Coconut Shield</b><small>Built into the app</small></div>
+          <svg class="flow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <div class="flow__node" role="listitem"><span class="flow__ic">🛡️</span><b>On the device</b><small>Detects &amp; blocks attacks</small></div>
+        </div>
+        <p class="lane__note">Runs entirely inside the app. No logs or data are sent to Cyveura or to Hunter.</p>
+      </div>
+
+      <div class="lanes__sep"><span>Independent · use one or both</span></div>
+
+      <div class="lane lane--blue">
+        <p class="lane__label">Across your infrastructure</p>
+        <div class="lane__row" role="list" aria-label="Hunter SIEM">
+          <div class="flow__node" role="listitem"><span class="flow__ic">🖥️</span><b>Your systems</b><small>Servers, endpoints, network</small></div>
+          <svg class="flow__arrow flow__arrow--blue" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <div class="flow__node flow__node--blue" role="listitem"><span class="chip chip--flow"><img width="24" height="24" src="assets/img/hunter-logo.png" alt=""></span><b>Hunter SIEM</b><small>Detects &amp; investigates</small></div>
+          <svg class="flow__arrow flow__arrow--blue" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <div class="flow__node" role="listitem"><span class="flow__ic">👥</span><b>Security team</b><small>Responds</small></div>
+        </div>
+        <p class="lane__note">Collects logs from your own systems and keeps them on your infrastructure.</p>
+      </div>
     </div>
     <div class="flow__copy">
-      <h2>From application protection<br>to security operations.</h2>
-      <p><b class="t-green">Coconut Shield</b> protects the apps you ship.<br><b class="t-blue">Hunter SIEM</b> watches the environment around them.</p>
+      <h2>Two layers of defense.<br>Two separate products.</h2>
+      <p><b class="t-green">Coconut Shield</b> protects the apps you ship, on your users&rsquo; devices.<br><b class="t-blue">Hunter SIEM</b> watches the systems you run.</p>
+      <p>Each works on its own and needs nothing from the other. Use whichever covers your risk, or both.</p>
     </div>
   </div>
 </section>
@@ -388,7 +405,7 @@
     <div>
       <p class="eyebrow eyebrow--light">Our vision</p>
       <h2>Security that goes from the code you ship to the SOC that defends it.</h2>
-      <p>We think protecting applications and monitoring infrastructure belong together. Today that is two products that work side by side. Next, Coconut Shield-protected apps will report device and tamper signals straight into Hunter, so your security team sees an attack on the app and the attack on the network together.</p>
+      <p>Attackers go after both the app in your customer&rsquo;s hand and the infrastructure behind it. We build a focused product for each: one that defends the app on the device, and one that gives your security team visibility across the systems you run. Each product stands on its own. Together they cover both sides.</p>
       <div class="vision__pillars">
         <div><b>Protect</b><small>every app you release</small></div>
         <div><b>Detect</b><small>every threat that matters</small></div>
@@ -431,6 +448,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/main.js?v=6"></script>
 </body>
 </html>

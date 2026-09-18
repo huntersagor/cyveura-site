@@ -33,7 +33,7 @@
 
   // Fade sections in as they scroll into view.
   if ('IntersectionObserver' in window) {
-    var els = document.querySelectorAll('.prod, .mini, .why, .panel, .pipeline > div, .ai, .flow__chain, .split__visual');
+    var els = document.querySelectorAll('.prod, .mini, .why, .panel, .pipeline > div, .ai, .lane, .split__visual');
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
