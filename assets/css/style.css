@@ -487,3 +487,10 @@ img.ic-inline { display: inline-block; object-fit: contain; }
   .hero__visual .rc p:nth-child(n+6) { display: none; }
   .hero__visual .dash--green { top: 0; }
 }
+
+/* Vision logo: keep the logo's own aspect ratio (the height attribute would otherwise squash it). */
+.vision__inner { grid-template-columns: 200px 1fr; }
+.vision__inner img { width: 170px; height: auto; aspect-ratio: 783 / 812; object-fit: contain; justify-self: center; align-self: center; }
+@media (max-width: 920px) {
+  .vision__inner img { width: 120px; justify-self: start; }
+}
